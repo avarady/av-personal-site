@@ -1,0 +1,51 @@
+.timeline-img {
+    width: 45px;
+    margin-right: 0.5rem;
+    border-radius: 50%;;
+}
+.img-link {
+    cursor: pointer;
+}
+.timeline-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    color: #04addc;
+}
+.timeline-subtitle, .timeline-date {
+    font-style: italic;
+    margin-right: 1rem;
+    line-height: 1.2;
+}
+.timeline-description {
+    line-height: 1.2;
+}
+.timeline-list {
+    line-height: 1.2;
+}
+a {
+    transition: 0.3s;
+    text-decoration: none;
+    color: #04addc;
+}
+a:hover {
+    transition: 0.1s;
+    text-decoration: none;
+    color: #89dcf0;
+}
+  
+/* Small devices */
+@media only screen and (max-width: 576px) {
+
+}
+  
+/* Medium devices */
+@media only screen and (min-width: 576px) {
+
+}
+   
+/* Large devices */
+@media only screen and (min-width: 992px) {
+}
+  
