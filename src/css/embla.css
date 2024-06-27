@@ -1,0 +1,98 @@
+.embla {
+    max-width: 90%;
+    margin: auto;
+}
+.embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    margin-left: -1rem;
+}
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    padding-left: 1rem;
+}
+.embla__caption {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+.embla__button {
+    transition: 0.3s;
+    -webkit-tap-highlight-color: rgba(49, 49, 49, 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 0;
+    background: #aaa;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.embla__button:hover {
+    transition: 0.3s;
+    background: #629a34;
+    color: white;
+}
+
+.embla-thumbs {
+    --thumbs-slide-spacing: 0.8rem;
+    --thumbs-slide-height: 6rem;
+    margin-top: var(--thumbs-slide-spacing);
+}
+.embla-thumbs__viewport {
+    overflow: hidden;
+    margin-left: 1rem;
+}
+.embla-thumbs__container {
+    display: flex;
+    flex-direction: row;
+    margin-left: calc(var(--thumbs-slide-spacing) * -1);
+}
+.embla-thumbs__slide {
+    flex: 0 0 15%;
+    min-width: 0;
+    padding-left: 0.8rem;
+}
+.embla-thumbs__slide__button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+
+    display: inline-flex;
+    cursor: pointer;
+    border: 3px solid transparent;
+    padding: 0;
+}
+.embla-thumbs__slide--selected .embla-thumbs__slide__button {
+    border: 3px solid #629a34;
+}
+
+@media only screen and (max-width: 992px) {
+    .embla__button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+    .embla-thumbs {
+        display: none;
+    }
+    .embla-thumbs__slide {
+        flex: 0 0 22%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .embla__button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+    .embla-thumbs {
+        display: none;
+    }
+    .embla-thumbs__slide {
+        flex: 0 0 28%;
+    }
+}

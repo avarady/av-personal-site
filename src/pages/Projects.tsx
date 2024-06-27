@@ -1,22 +1,63 @@
-import React from "react";
-import ProjectCard, { IProjectItem } from "../components/ProjectCard";
+import React, { useState } from "react";
+import ProjectCard from "../components/ProjectCard";
 import "../css/projects.css";
-import { projects } from "../content/projects";
+import { IProjectItem, projects } from "../content/projects";
+import ProjectDetailModal from "../components/ProjectDetailModal";
 
 const Projects = () => {
-  return (
-    <div>
-      <div className="container mb-5">
-        <div className="project-header">Projects</div>
-        <div className="mb-4"><i>More projects and more detailed information coming soon.</i></div>
-        <div className="project-wrapper d-flex flex-row flex-wrap align-items-center justify-content-between">
-          {projects.map((item: IProjectItem, index: number) => {
-            return <ProjectCard content={item} />
-          })}
-        </div>
-      </div>
-    </div>
-  );
-}
+    const [detailContent, setDetailContent] = useState<IProjectItem | null>();
+    const showDetails = (e: any, item: IProjectItem) => {
+        console.log(e);
+        setDetailContent(item);
+    };
+    return (
+        <>
+            <div className="container mb-5">
+                <div className="project-header">Project Highlights</div>
+                <div className="project-wrapper d-flex flex-row flex-wrap align-items-center justify-content-between">
+                    {projects.map((item: IProjectItem, index: number) => {
+                        return (
+                            <div
+                                className="card-wrapper"
+                                onClick={(e) => showDetails(e, item)}
+                            >
+                                <ProjectCard content={item} />
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+            <div
+                className={
+                    "blackout" + (detailContent ? " blackout-shown" : "")
+                }
+                onClick={() => setDetailContent(null)}
+            ></div>
+            <div
+                className={
+                    "detail-modal d-flex flex-column" +
+                    (detailContent ? " detail-modal-shown" : "")
+                }
+            >
+                {detailContent && (
+                    <>
+                        <div className="d-flex justify-content-between">
+                            <div className="detail-title">
+                                {detailContent?.title}
+                            </div>
+                            <button
+                                className="btn btn-x"
+                                onClick={() => setDetailContent(null)}
+                            >
+                                <i className="fa-solid fa-x"></i>
+                            </button>
+                        </div>
+                        <ProjectDetailModal content={detailContent} />
+                    </>
+                )}
+            </div>
+        </>
+    );
+};
 
 export default Projects;
