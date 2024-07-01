@@ -15,6 +15,63 @@ export interface IProjectItem {
 
 export const projects = [
     {
+        title: "Game Website",
+        images: [
+            {
+                src: "/images/game/geoguesser.jpg",
+                text: "Users can play a Geoguesser game to guess locations in maps from the video game \"Hunt: Showdown\"."
+            },
+            {
+                src: "/images/game/geoguesser2.jpg",
+                text: "Statistics are tracked per user if logged in."
+            },
+            {
+                src: "/images/game/twitchext.jpg",
+                text: "Developed a Twitch extension allowing streamers to invite their audience to participate in guessing locations. Uses WebSockets to communicate live information both ways."
+            },
+            {
+                src: "/images/game/account.jpg",
+                text: "Users can connect their Twitch account to enable automatic connection with the Twitch extension on their channel."
+            },
+            {
+                src: "/images/game/loadout.jpg",
+                text: "The Loadout Randomizer feature allows users to randomize the items that they bring into their game matches."
+            },
+            {
+                src: "/images/game/bingosettings.jpg",
+                text: "Streamers can set up bingo games to play with their audiences. It includes settings for date and time, whether or not to allow user rerolls, public or private games, etc. Users can also import prompts via CSV file. An example prompt might be \"Streamer gets more than 5 kills in one match\""
+            },
+            {
+                src: "/images/game/bingoplayer.jpg",
+                text: "The player view of a bingo game. Uses WebSockets to keep list of calls up to date."
+            },
+        ],
+        skills: {
+            front: ["ReactJS", "HTML", "CSS", "Bootstrap"],
+            back: ["Node.js", "Express.js", "REST API", "Postgres"],
+            other: ["AWS S3", "WebSockets", "Twitch API", "Paypal API"]
+        }, 
+        description: "This website was created to complement the video game \"Hunt: Showdown\". It features interactive tools to allow streamers to engage with their audience during live broadcasts. Official name of website withheld for privacy reasons due to association with gaming username.",
+        achievements: [
+            {
+                title: "Comprehensive Feature Development",
+                description: "Independently designed and implemented frontend, backend, and Twitch extension components."
+            },
+            {
+                title: "Twitch Integration",
+                description: "Implemented Twitch account connectivity via Twitch API, which will automatically configure the Twitch extension on the user's channel to synchronize with their active Geoguesser session."
+            },
+            {
+                title: "WebSockets",
+                description: "Engineered websocket functionality to facilitate real-time updates of information during gameplay."
+            },
+            {
+                title: "File Processing",
+                description: "Developed functionality enabling CSV files to be uploaded, parsed, and imported into bingo game prompts."
+            }
+        ]
+    },
+    {
         title: "Bounds",
         images: [
             {
@@ -51,15 +108,15 @@ export const projects = [
         achievements: [
             {
                 title: "Performance Optimization",
-                description: "Enhanced SQL queries and API algorithms, increasing speed and responsiveness by up to 75%."
+                description: "Improved SQL queries and API algorithms, achieving up to 75% faster speed and responsiveness."
             },
             {
                 title: "Automated Data Processing",
-                description: "Developed PowerShell scripts to automate the download of tab-delimited text files from an FTP server, parse and insert data into a database, log operations, and remove old files."
+                description: "Engineered PowerShell scripts to automate the retrieval of tab-delimited text files from an FTP server, parsing, data insertion into databases, operation logging, and deletion of obsolete files."
             },
             {
                 title: "Data Dashboard Development",
-                description: "Created a data dashboard with filtering and search functionality, allowing users to view mortgages, farmable acreage, and other metrics compared to previous periods (month, quarter, year)."
+                description: "Designed a comprehensive data dashboard featuring filtering and search capabilities, enabling users to analyze metrics such as mortgages, farmable acreage, and comparative data across different periods."
             },
         ]
     },
@@ -98,7 +155,7 @@ export const projects = [
         skills: {
             front: ["ReactJS", "TypeScript", "HTML", "CSS", "Bootstrap"],
             back: ["Python", "Django", "REST API", "MS SQL Server"],
-            other: ["OpenAI", "Azure", "Payment Systems"]
+            other: ["OpenAI API", "Azure Blob Storage", "Paypal API"]
         },
         description: "LogoLounge is a social media platform for graphic designers specializing in logos. It allows users to submit, comment on, like, save, and follow other designers' work. This new site is currently in development and will replace the existing production site upon completion.",
         achievements: [
@@ -108,15 +165,15 @@ export const projects = [
             },
             {
                 title: "Payment System Development",
-                description: "Developed payment flow and processing, including coupons, gift cards, and subscription-based services, utilizing the PayPal API for final payments."
+                description: "Developed payment flow and processing, including coupons, gift cards, and subscription services, utilizing the PayPal API for secure transactions."
             },
             {
                 title: "WordPress Integration",
-                description: "Integrated the WordPress API to embed news items from the company's blog site."
+                description: "Integrated the WordPress API to dynamically embed news items from the company's blog site."
             },
             {
                 title: "Cloud Storage Integration",
-                description: "Integrated Azure Blob Storage for uploading and retrieving logo and avatar images."
+                description: "Integrated Azure blob storage for uploading and retrieval of logo and avatar images."
             },
             {
                 title: "Comprehensive Feature Development",
@@ -124,7 +181,7 @@ export const projects = [
             },
             {
                 title: "Performance Optimization",
-                description: "Enhanced SQL queries and API algorithms, increasing speed and responsiveness by up to 50%."
+                description: "Optimized SQL queries and API algorithms, boosting speed and responsiveness by up to 50%."
             },
         ]
     },
@@ -181,7 +238,11 @@ export const projects = [
             },
             {
                 title: "Autodesk Integration",
-                description: "Implemented passage of information between application and embedded Autodesk 3D model viewer, such as selected item and associated anomalies to be highlighted in a different color."
+                description: "Implemented exchange of information between application and embedded Autodesk 3D model viewer, facilitating dynamic highlighting of selected items and associated anomalies in distinct colors."
+            },
+            {
+                title: "Mobile Application Development",
+                description: "Project included a mobile application designed to synchronize all information for offline use, including forms that sync back to the main server once online."
             },
         ]
     },
@@ -231,7 +292,8 @@ export const projects = [
         ],
         skills: {
             front: ["Preact", "HTML", "CSS", "Bootstrap"],
-            back: ["Go", "GraphQL"]
+            back: ["Go", "GraphQL"],
+            other: ["Stripe API", "Twilio API", "Google Maps API"]
         },
         description: "Buttermove is a comprehensive platform that connects movers with moving companies. It features booking, customer feedback, and a unique \"ButterScore\" reflecting mover trustworthiness.",
         achievements: [
@@ -249,7 +311,7 @@ export const projects = [
             },
             {
                 title: "Google Maps Integration",
-                description: "Integrated the Google Maps API to autocomplete addresses and to display move information seamlessly within the platform."
+                description: "Integrated the Google Maps API for address autocompletion and seamless display of move information within the platform."
             },
         ]
     },
