@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
-import TimelineSection from "../components/TimelineSection";
-import ResumeCard from "../components/ResumeCard";
+import Header from "../components/resume/Header";
+import TimelineSection from "../components/resume/TimelineSection";
+import ResumeCard from "../components/resume/ResumeCard";
 //import AccordionGroup from "../components/AccordionGroup";
 import { workHistory } from "../content/workHistory";
 import { educationHistory } from "../content/educationHistory";
@@ -10,11 +10,17 @@ import { educationHistory } from "../content/educationHistory";
 const Resume = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <div className="container column-wrapper">
         <div className="column">
           <ResumeCard title="Profile">
-            Experienced full-stack developer with 8+ years of expertise in a wide array of languages and frameworks. Known for rapid delivery of high-quality, efficient code, emphasizing algorithm optimization and robust error handling. Highly proficient in relational databases, normalization, and advanced querying techniques. Quick learner, passionate about innovative problem-solving and delivering top-tier solutions.
+            Experienced full-stack developer with 8+ years of expertise in a
+            wide array of languages and frameworks. Known for rapid delivery of
+            high-quality, efficient code, emphasizing algorithm optimization and
+            robust error handling. Highly proficient in relational databases,
+            normalization, and advanced querying techniques. Quick learner,
+            passionate about innovative problem-solving and delivering top-tier
+            solutions.
           </ResumeCard>
           <ResumeCard title="Soft Skills">
             {/*<i>Click to expand</i>
@@ -81,8 +87,12 @@ const Resume = () => {
               <li>Postman</li>
               <li>SQL Server Management Studio (SSMS)</li>
               <li>pgAdmin</li>
-              <li>Microsoft Office (Word, Excel, PowerPoint, OneNote, Teams)</li>
-              <li>Adobe CC (Photoshop, Illustrator, Lightroom, Animate, Acrobat)</li>
+              <li>
+                Microsoft Office (Word, Excel, PowerPoint, OneNote, Teams)
+              </li>
+              <li>
+                Adobe CC (Photoshop, Illustrator, Lightroom, Animate, Acrobat)
+              </li>
               <li>Autodesk Maya</li>
               <li>Windows</li>
               <li>Linux</li>
@@ -91,15 +101,15 @@ const Resume = () => {
         </div>
         <div className="column">
           <ResumeCard title="Experience">
-            <TimelineSection content={workHistory}/>
+            <TimelineSection content={workHistory} />
           </ResumeCard>
           <ResumeCard title="Education">
-            <TimelineSection content={educationHistory}/>
+            <TimelineSection content={educationHistory} />
           </ResumeCard>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Resume;

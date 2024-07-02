@@ -1,0 +1,140 @@
+.skill-bubble {
+  color: white;
+  border-radius: 50px;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+}
+.skill-bubble-front {
+  background-color: #04addc;
+}
+.skill-bubble-back {
+  background-color: #629a34;
+}
+.skill-bubble-other {
+  background-color: #142a3a;
+}
+
+.blackout {
+  transition: background-color 0.5s;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+.blackout-shown {
+  transition: background-color 0.5s;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.detail-modal {
+  transition: 0.3s;
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.detail-modal-shown {
+  transition: 0.3s;
+  width: 1200px;
+  max-width: 90%;
+  height: 90%;
+}
+.detail-inner {
+  max-width: 90%;
+  padding: 0 1rem;
+  margin: auto;
+}
+.btn-x {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.detail-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  border-radius: 20px 20px 0 0;
+  padding: 1rem;
+  background: linear-gradient(0deg, #04addc 0%, #63e4fb 100%);
+  box-shadow: 0 0 0.5rem 0.3rem rgba(1, 1, 1, 0.5);
+}
+.detail-header {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+.detail-skills {
+  margin: auto;
+  font-size: 1.4rem;
+}
+
+.achievement-item {
+  border: 2px solid #04addc;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.achievement-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.achievement-title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 50%;
+  background: #ddd;
+  height: 2px;
+  bottom: 1px;
+}
+.achievement-title::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100px;
+  background: #629a34;
+  height: 4px;
+  bottom: 0;
+}
+.gallery {
+  width: 100%;
+  padding: 3rem 0;
+  color: white;
+  background: linear-gradient(0deg, #04addc 0%, #63e4fb 100%);
+  box-shadow: 0 0 0.5rem 0.3rem rgba(1, 1, 1, 0.5);
+}
+.embla__button {
+  background: white !important;
+  color: black !important;
+}
+.embla__button:hover {
+  background: #63e4fb !important;
+}
+
+/* Small and medium devices */
+@media only screen and (max-width: 992px) {
+  .skill-bubble {
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+  }
+}
