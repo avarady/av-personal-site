@@ -1,0 +1,23 @@
+.about-header {
+  font-size: 3rem;
+  padding-top: 2rem;
+  letter-spacing: 0.1rem;
+}
+p {
+  margin-top: 1rem;
+}
+.container {
+ max-width: 1000px;
+}
+img {
+  object-fit: cover;
+}
+/* Small and medium devices */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Large devices */
+@media only screen and (min-width: 992px) {
+
+}

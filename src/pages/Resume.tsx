@@ -44,15 +44,14 @@ const Resume = () => {
               <li>C++</li>
               <li>C#</li>
               <li>PHP</li>
-              <li>HTML + CSS</li>
-              <li>Bootstrap</li>
+              <li>HTML & CSS</li>
+              <li>Bootstrap / Tailwind</li>
               <li>
                 JS-Related:
                 <ul>
-                  <li>JavaScript</li>
-                  <li>TypeScript</li>
+                  <li>JavaScript / TypeScript</li>
                   <li>jQuery</li>
-                  <li>ReactJS</li>
+                  <li>ReactJS / Preact</li>
                   <li>Node.js</li>
                   <li>Express.js</li>
                 </ul>
@@ -76,13 +75,15 @@ const Resume = () => {
               <li>Agile / Scrum</li>
               <li>Software Development Life Cycle (SDLC)</li>
               <li>Object-Oriented Programming (OOP)</li>
-              <li>Relational Databases & Normalization</li>
-              <li>Full Stack Development</li>
+              <li>Data Structures</li>
+              <li>Algorithm Design & Analysis</li>
+              <li>Debugging</li>
+              <li>Relational Database Design, Normalization, & Management</li>
+              <li>REST API Development</li>
             </ul>
-            <h5>Software & OS</h5>
+            <h5>Software, Tools, & OS</h5>
             <ul className="mb-0">
-              <li>Visual Studio</li>
-              <li>VS Code</li>
+              <li>Visual Studio & VS Code</li>
               <li>Unity</li>
               <li>Postman</li>
               <li>SQL Server Management Studio (SSMS)</li>
@@ -94,8 +95,7 @@ const Resume = () => {
                 Adobe CC (Photoshop, Illustrator, Lightroom, Animate, Acrobat)
               </li>
               <li>Autodesk Maya</li>
-              <li>Windows</li>
-              <li>Linux</li>
+              <li>Windows & Linux</li>
             </ul>
           </ResumeCard>
         </div>
