@@ -39,6 +39,13 @@ const Resume = () => {
             <i>Click to expand</i>
             <AccordionGroup content={hardSkills} suffix="hard" />
           </ResumeCard>
+          <ResumeCard title="Languages">
+            <ul>
+              <li>English (native)</li>
+              <li>Korean (proficient)</li>
+              <li>Spanish (proficient)</li>
+            </ul>
+          </ResumeCard>
         </div>
         <div className="column">
           <ResumeCard title="Experience">

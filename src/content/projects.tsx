@@ -164,7 +164,7 @@ export const projects = [
     skills: {
       front: ["ReactJS", "TypeScript", "HTML", "CSS", "Bootstrap"],
       back: ["Python", "Django", "REST API", "MS SQL Server"],
-      other: ["OpenAI API", "Azure Blob Storage", "PayPal API"],
+      other: ["OpenAI API", "Azure Blob Storage", "PayPal API", "MailChimp API", "WordPress API"],
     },
     description:
       "LogoLounge is a social media platform for graphic designers specializing in logos. It allows users to submit, comment on, like, save, and follow other designers' work. This new site is currently in development and will replace the existing production site upon completion.",

@@ -30,45 +30,62 @@ export const softSkills = [
 export const hardSkills = [
   {
     title: "Languages & Frameworks",
-    inner: (<ul>
-      <li>Java</li>
-      <li>Python</li>
-      <li>C++</li>
-      <li>C#</li>
-      <li>PHP</li>
-      <li>HTML & CSS</li>
-      <li>Bootstrap / Tailwind</li>
-      <li>
-        JS-Related:
-        <ul>
-          <li>JavaScript / TypeScript</li>
-          <li>jQuery</li>
-          <li>ReactJS / Preact</li>
-          <li>Node.js</li>
-          <li>Express.js</li>
-        </ul>
-      </li>
-      <li>Django REST Framework</li>
-      <li>.NET Core & .NET Framework</li>
-      <li>
-        SQL:
-        <ul>
-          <li>T-SQL</li>
-          <li>PostgreSQL</li>
-          <li>MySQL</li>
-          <li>SQLite</li>
-        </ul>
-      </li>
-    </ul>)
+    inner: (<>
+      <h3>Experienced:</h3>
+      <ul>
+        <li>Java</li>
+        <li>C#</li>
+        <li>Python / Django REST Framework</li>
+        <li>HTML + CSS / Bootstrap</li>
+        <li>.NET Core (UWP, Android, iOS)</li>
+        <li>
+          JS-Related:
+          <ul>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>jQuery</li>
+            <li>ReactJS / Preact</li>
+            <li>Node.js / Express.js</li>
+          </ul>
+        </li>
+        <li>
+          SQL:
+          <ul>
+            <li>MS SQL Server / T-SQL</li>
+            <li>Oracle SQL</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Familiar / Limited Experience:</h3>
+      Limited proficiency or would require a refresher due to time elapsed since last used.
+      <ul>
+        <li>.NET Framework</li>
+        <li>AngularJS</li>
+        <li>Bash</li>
+        <li>C++</li>
+        <li>Go</li>
+        <li>GraphQL</li>
+        <li>Kotlin</li>
+        <li>PHP</li>
+        <li>PowerShell</li>
+        <li>R</li>
+        <li>Racket / LISP</li>
+        <li>SQLite</li>
+        <li>Tailwind</li>
+      </ul>
+    </>)
   },
   {
     title: "Processes & Concepts",
     inner: (<ul>
       <li>DevOps + CI/CD</li>
-      <li>Git / Version Control</li>
+      <li>Git / GitHub</li>
       <li>Agile / Scrum</li>
       <li>Code Reviews</li>
       <li>REST API Development</li>
+      <li>Responsive Web Design</li>
       <li>Software Development Life Cycle (SDLC)</li>
       <li>Object-Oriented Programming (OOP)</li>
       <li>Data Structures</li>
@@ -76,12 +93,15 @@ export const hardSkills = [
       <li>Relational Database Design, Normalization, & Management</li>
       <li>Information & Web Security</li>
       <li>Debugging</li>
+      <li>Startups</li>
     </ul>)
   },
   {
     title: "Software, Tools, & OS",
     inner: (<ul>
       <li>Visual Studio & VS Code</li>
+      <li>Eclipse</li>
+      <li>Android Studio</li>
       <li>Unity</li>
       <li>Postman</li>
       <li>SQL Server Management Studio (SSMS)</li>
@@ -102,11 +122,13 @@ export const hardSkills = [
     inner: (<ul>
       <li>ArcGIS / Esri</li>
       <li>Google Maps</li>
+      <li>MailChimp</li>
       <li>OpenAI</li>
       <li>PayPal</li>
       <li>Stripe</li>
       <li>Twilio</li>
       <li>Twitch</li>
+      <li>WordPress</li>
     </ul>)
   }
 ];

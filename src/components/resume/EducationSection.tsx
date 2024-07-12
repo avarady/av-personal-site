@@ -67,7 +67,7 @@ const EducationSection = ({ content }: { content: IEducationItem[] }) => {
                 content={item.courses.map((section: ICourseSection) => {
                   return ({
                     title: section.title,
-                    inner: (<ul>
+                    inner: (<ul className="lh-base">
                       {section.courses.map((course: ICourse) => {
                         if(course.link){
                           return (
