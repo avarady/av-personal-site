@@ -1,17 +1,18 @@
 import React from "react";
 import Header from "../components/resume/Header";
-import TimelineSection from "../components/resume/TimelineSection";
+import WorkHistorySection from "../components/resume/WorkHistorySection";
 import ResumeCard from "../components/resume/ResumeCard";
-//import AccordionGroup from "../components/AccordionGroup";
+import AccordionGroup from "../components/AccordionGroup";
 import { workHistory } from "../content/workHistory";
 import { educationHistory } from "../content/educationHistory";
-//import { softSkills, hardSkills } from "../content/skills";
+import EducationSection from "../components/resume/EducationSection";
+import { softSkills, hardSkills } from "../content/skills";
 
 const Resume = () => {
   return (
     <div>
       <Header />
-      <div className="container column-wrapper">
+      <div className="column-wrapper">
         <div className="column">
           <ResumeCard title="Profile">
             Experienced full-stack developer with 8+ years of expertise in a
@@ -35,76 +36,16 @@ const Resume = () => {
             </ul>
           </ResumeCard>
           <ResumeCard title="Hard Skills">
-            {/*<i>Click to expand</i>
-            <AccordionGroup content={hardSkills} suffix="hard" />*/}
-            <h5>Languages & Frameworks</h5>
-            <ul>
-              <li>Java</li>
-              <li>Python</li>
-              <li>C++</li>
-              <li>C#</li>
-              <li>PHP</li>
-              <li>HTML & CSS</li>
-              <li>Bootstrap / Tailwind</li>
-              <li>
-                JS-Related:
-                <ul>
-                  <li>JavaScript / TypeScript</li>
-                  <li>jQuery</li>
-                  <li>ReactJS / Preact</li>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                </ul>
-              </li>
-              <li>Django REST Framework</li>
-              <li>.NET Core & .NET Framework</li>
-              <li>
-                SQL:
-                <ul>
-                  <li>T-SQL</li>
-                  <li>PostgreSQL</li>
-                  <li>MySQL</li>
-                  <li>SQLite</li>
-                </ul>
-              </li>
-            </ul>
-            <h5>Processes & Concepts</h5>
-            <ul>
-              <li>DevOps + CI/CD</li>
-              <li>Git / Version Control</li>
-              <li>Agile / Scrum</li>
-              <li>Software Development Life Cycle (SDLC)</li>
-              <li>Object-Oriented Programming (OOP)</li>
-              <li>Data Structures</li>
-              <li>Algorithm Design & Analysis</li>
-              <li>Debugging</li>
-              <li>Relational Database Design, Normalization, & Management</li>
-              <li>REST API Development</li>
-            </ul>
-            <h5>Software, Tools, & OS</h5>
-            <ul className="mb-0">
-              <li>Visual Studio & VS Code</li>
-              <li>Unity</li>
-              <li>Postman</li>
-              <li>SQL Server Management Studio (SSMS)</li>
-              <li>pgAdmin</li>
-              <li>
-                Microsoft Office (Word, Excel, PowerPoint, OneNote, Teams)
-              </li>
-              <li>
-                Adobe CC (Photoshop, Illustrator, Lightroom, Animate, Acrobat)
-              </li>
-              <li>Autodesk Maya</li>
-              <li>Windows & Linux</li>
-            </ul>
+            <i>Click to expand</i>
+            <AccordionGroup content={hardSkills} suffix="hard" />
           </ResumeCard>
         </div>
         <div className="column">
           <ResumeCard title="Experience">
-            <TimelineSection content={workHistory} />
+            <WorkHistorySection content={workHistory} />
           </ResumeCard>
           <ResumeCard title="Education">
-            <TimelineSection content={educationHistory} />
+            <EducationSection content={educationHistory} />
           </ResumeCard>
         </div>
       </div>

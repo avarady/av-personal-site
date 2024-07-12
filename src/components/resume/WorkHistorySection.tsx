@@ -1,7 +1,7 @@
 import React from "react";
 import "../../css/timeline.css";
 
-export interface ITimelineItem {
+export interface IWorkItem {
   imageSrc?: string;
   link?: string;
   title: string;
@@ -11,10 +11,10 @@ export interface ITimelineItem {
   listItems?: string[];
 }
 
-const TimelineSection = ({ content }: { content: ITimelineItem[] }) => {
+const WorkHistorySection = ({ content }: { content: IWorkItem[] }) => {
   return (
     <div className="">
-      {content.map((item: ITimelineItem, index: number) => {
+      {content.map((item: IWorkItem, index: number) => {
         return (
           <div className="mt-3">
             <div className="d-flex align-items-center">
@@ -68,4 +68,4 @@ const TimelineSection = ({ content }: { content: ITimelineItem[] }) => {
   );
 };
 
-export default TimelineSection;
+export default WorkHistorySection;
