@@ -13,7 +13,7 @@ const About = () => {
       <p>
         I did create this website myself using ReactJS + TypeScript. 
         It is rather new and a work in progress that I have been updating regularly.
-        (There is no backend as the amount of data required is small and not expected to grow significantly.)
+        (There is no backend as the amount of data required is small, mostly static, and not expected to grow significantly.)
       </p>
       <p>
         Outside of work, my hobbies include video games and cosplay. 
@@ -32,8 +32,9 @@ const About = () => {
         <img className="w-50" src="/images/about/art2.jpg"/>
       </div>
       <p>
-        As an animal lover, I have two cats and currently foster three kittens for <a href="https://therescueproject.net/" target="_blank" rel="noreferrer">The Rescue Project</a>.
-        Whether or not we keep any fosters remains to be seen!
+        As an animal lover, I have three cats, all of which are rescues. 
+        I have volunteered with many area shelters and organizations, and I currently foster for <a href="https://therescueproject.net/" target="_blank" rel="noreferrer">The Rescue Project</a>.
+        (One of my three cats is a foster fail!)
       </p>
       <div className="d-flex gap-2">
         <img className="w-50" src="/images/about/echo.jpg"/>
