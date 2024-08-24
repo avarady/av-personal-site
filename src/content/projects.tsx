@@ -110,7 +110,7 @@ export const projects = [
       other: ["ArcGIS", "Powershell"],
     },
     description:
-      "Bounds is a website for accessing information on parcels of land within the state of Kansas. It provides data on landowners, tax history, crop yields, and more. In early development, not yet published.",
+      "Bounds is a website for accessing information on parcels of land within the state of Kansas. It provides data on landowners, tax history, crop yields, and more. In early development.",
     achievements: [
       {
         title: "Performance Optimization",

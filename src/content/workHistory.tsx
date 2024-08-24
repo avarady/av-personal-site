@@ -1,10 +1,19 @@
 export const workHistory = [
   {
+    imageSrc: "/images/susco.png",
+    link: "https://suscosolutions.com/",
+    title: "Susco",
+    subtitle: "Intermediate Software Developer",
+    date: "Aug 2024 - Present",
+    listItems: [
+    ],
+  },
+  {
     imageSrc: "/images/zant.png",
     link: "https://www.zanttech.com/",
     title: "Zant Technologies",
     subtitle: "Software Developer",
-    date: "Nov 2021 - Present",
+    date: "Nov 2021 - Aug 2024",
     listItems: [
       "Developed and customized large-scale, customer-facing web and mobile applications according to client specifications, including e-commerce and payment processing systems.",
       "Engaged in full stack development across a variety of languages and frameworks tailored to each project's requirements, using Agile/Scrum methodologies.",
